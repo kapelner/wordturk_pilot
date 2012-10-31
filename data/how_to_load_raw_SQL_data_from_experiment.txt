@@ -1,0 +1,13 @@
+1) Inside a MYSQL terminal, run the following:
+
+create database wordturk_prod
+
+Then run the following from the windows command line in <project dir>/data:
+
+mysql -u root -p wordturk_prod < wordturk_prod_data_Nov_26_11.sql
+
+
+Then... you can load up the live data on your personal machine via:
+
+rails s -e production
+rails c production

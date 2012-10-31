@@ -1,0 +1,9 @@
+<form method="post" action="/">
+  Password: <input type="password" name="pw" id="pw_entry" />
+  <input type="submit" value="Go" /> <%= session[:admin] %>
+</form>
+<script type="text/javascript">
+  Event.observe(window, 'load', function(){
+    $('pw_entry').focus();
+  });
+</script>

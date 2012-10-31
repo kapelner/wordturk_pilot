@@ -1,0 +1,72 @@
+<table width="30%" cellspacing="0">
+  <tr>
+    <td>Started At:</td>
+    <td><%= @br.started_at %></td>
+  </tr>
+  <tr>
+    <td>Read Consent At:</td>
+    <td><%= @br.read_consent_at %></td>
+  </tr>
+  <tr>
+    <td>Read Directions At:</td>
+    <td><%= @br.read_directions_at %></td>
+  </tr>
+  <tr>
+    <td>Submitted At:</td>
+    <td><%= @br.finished_at %></td>
+  </tr>
+</table>
+<br />
+<br />
+<br />
+
+<% unless @br.data.empty? %>
+  <h2>Inspect all balls (<%= @br.data.length %>)</h2>
+  <table width="100%" cellspacing="0">
+    <tr>
+      <th align="left">Ball</th>
+      <th align="left">Type</th>
+      <th align="left">Requested<br />Speed (px/s)</th>
+      <th align="left">Actual<br />Speed (px/s)</th>
+      <th align="left">Reaction <br />Radius (px)</th>
+      <th align="left">Reaction Radius - <br />Ideal Radius (px)</th>
+      <th align="left">Reaction <br />Time (ms)</th>
+      <th align="left">Ideal <br />Time (ms)</th>
+      <th align="left">Reaction Time - <br />Ideal Time (ms)</th>
+      <th align="left">Discrep (ms)</th>
+      <th align="left">Timestamp</th>
+    </tr>
+    <% @br.data.each_with_index do |d, i| %>
+      <% res = @br.hit_before_or_after_blue_outer_for_trial(i) %>
+      <tr style="background-color:<% if res == -1 %>rgb(256,128,128);<% elsif res == 1 || res == BaseballRun::FAIL_CODE %>rgb(256,256,128);<% else %>rgb(128,256,128);<% end %>">
+        <td><%= i + 1 %></td>
+        <td><%= BaseballRun::EXPERIMENTAL_SPEEDS.invert[@br.speeds[i]] %></td>
+        <td><%= @br.speeds[i] %></td>
+        <td><%= digits_round(@br.actual_speed_for_trial(i), 1) %></td>
+        <td><%= digits_round(@br.get_reaction_radius_for_trial(i), 2) %></td>
+        <td>
+          <%= digits_round(@br.get_radius_distance_diff_for_trial(i), 2) %>
+          (<%= digits_round(@br.get_percentage_radius_off_for_trial(i), 1) %>%)
+        </td>
+        <td><%= @br.get_reaction_time_for_trial(i) %></td>
+        <td><%= @br.get_ideal_time_for_trial(i).round %></td>
+        <td>
+          <%= @br.get_diff_time_for_trial(i).round %>
+          (<%= digits_round(@br.get_percentage_time_off_for_trial(i), 1) %>%)
+        </td>
+        <td><%= @br.discrepancy_between_reaction_radius_and_time_for_trial(i).round %></td>
+        <td><%= d[2] %></td>
+      </tr>
+      <% if (i + 1) % 4 == 0 %>
+        <tr><td colspan="11"><hr /></td></tr>
+      <% end %>
+    <% end %>
+  </table>
+  (Ideal Radius: <%= BaseballRun::IdealRadius %> &plusmn; <%= BaseballRun::SuccessRange / 2.0 %>px)
+<% end %>
+<br />
+<br />
+<% unless @br.comments.nil? %>
+  <h3>Comments:</h3>
+   <%= @br.comments %>
+<% end %>

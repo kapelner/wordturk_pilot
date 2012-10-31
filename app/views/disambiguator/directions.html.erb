@@ -1,0 +1,10 @@
+<h2>Directions</h2>
+
+<div style="text-align:left;">
+  This is really easy...
+</div>
+
+<form method="post" action="/<%= PersonalInformation::ExperimentalController %>/read_directions">
+  <input type="hidden" name="id" value="<%= @dr.id %>" />
+  <input type="submit" value=" I have read and understood these directions " />
+</form>

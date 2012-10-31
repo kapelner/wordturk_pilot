@@ -1,0 +1,44 @@
+<h2>Consent Form</h2>
+
+<div style="text-align:left;">
+  You are being asked to take part in a research study run by the (your institution here).
+  Your participation is completely voluntary, which means you can choose whether or not to participate.<br />
+  <br />
+  The purpose of this study is to build an intelligent program that automatically identifies the meanings of words.
+  If you are younger than 18, you are not eligible to participate in this study. The task will take less than
+  one minute of your time and you can do as many as you wish.<br />
+  <br />
+  Please contact experimenters Name 1 and Name 2 at email with further questions.
+</div>
+
+<h2>Demographics</h2>
+
+<form method="post" action="/<%= PersonalInformation::ExperimentalController %>/agreed_to_consent" onsubmit="return check_demographics();">
+  <div style="margin-bottom:10px;">
+    <table>
+      <tr>
+        <td>Age:</td>
+        <td><input type="text" style="width:50px;" maxlength="2" name="age" id="age" /></td>
+      </tr>
+      <tr>
+        <td>Gender:</td>
+        <td>
+          <input type="radio" name="gender" value="M" id="gender_male" /><label for="gender_male">Male</label>
+          <input type="radio" name="gender" value="F" id="gender_female" /><label for="gender_female">Female</label>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <input type="hidden" name="id" value="<%= @dr.id %>" />
+  <input type="submit" value=" I have read, agree to this consent, and have entered my information correctly " />
+</form>
+
+<script type="text/javascript">
+  function check_demographics(){
+    if ((!$('gender_male').checked && !$('gender_female').checked) ||  isNaN(parseInt($('age').value))){
+      alert('Please enter your gender and age.');
+      return false;
+    }
+    return true;
+  }
+</script>

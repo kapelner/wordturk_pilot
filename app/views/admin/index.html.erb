@@ -1,0 +1,10 @@
+<%= render :partial => 'admin_links' %>
+<div style="padding: 10px; border: 1px solid black; margin:10px;">
+  Num HITs left to do in experiment: 
+  <span style="color:white; background-color: black;">
+    <%= Disambiguation.num_snippets_left_in_experiment %>
+  </span>
+</div>
+<%= render 'create_hits' %>
+<%= render 'num_hits_displayed' %>
+<%= render 'treatment_links_and_all_hits', :runs => @runs, :show_listings_and_email => true %>

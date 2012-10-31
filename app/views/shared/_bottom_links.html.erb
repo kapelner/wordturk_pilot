@@ -1,0 +1,4 @@
+<% if logged_in? %>
+  <%= link_to 'home', :controller => :admin, :action => :index %>
+  <%= link_to 'logout', :controller => :admin, :action => :logout %>
+<% end %>

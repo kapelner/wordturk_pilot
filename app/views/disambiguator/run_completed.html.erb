@@ -1,0 +1,15 @@
+<h2>Debrief</h2>
+<div id="debrief">
+  Thank you for your participation in our research study. Please complete more HITs for us!<br /><br />
+  If you have any questions about this study, please feel free to contact Name 1 by contacting requester
+  or you may also contact the Institutional Review Board at the (your institution) by phoning 555-555-5555.<br /><br />
+  Please DO NOT set our HITs to automatically accept since some will be started by other Turkers and you'll have to return them.<br /><br />
+  Press the button below to submit to MTurk:<br /><br />
+  <input type="button" onclick="$('mturk_form').submit();" value=" Submit to MTurk "/>
+</div>
+
+<form method="post" action="https://<%= RTurkWrapper::MTURK_DEV ? 'workersandbox' : 'www' %>.mturk.com/mturk/externalSubmit" id="mturk_form">
+  <input type="hidden" name="assignmentId" value="<%= @dr.mturk_assignment_id %>" />
+  <input type="hidden" name="data" value="<%= @dr.senseeval_inventory_id %>" />
+  <input type="hidden" name="survey_id" value="<%= @dr.id %>" />
+</form>

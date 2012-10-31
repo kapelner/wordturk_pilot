@@ -1,0 +1,16 @@
+<h2>List of current experimental Words</h2>
+
+<table>
+  <tr>
+    <th>Word</th>
+    <th>Definitions</th>
+    <th>Snippets</th>
+  </tr>
+  <% @words.each do |w| %>
+      <tr>
+        <td><%= w.entry %></td>
+        <td><%= link_to 'defs', :controller => :wordnet_definitions, :action => :index, :entry => w.entry %></td>
+        <td><%= link_to 'snippets', :controller => :snippets, :entry => w.entry %></td>
+      </tr>
+  <% end %>
+</table>

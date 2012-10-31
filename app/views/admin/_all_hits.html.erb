@@ -1,0 +1,61 @@
+<div style="margin:5px; padding:5px; border: 1px solid black;">
+  <h3>All HITs (<%= runs.length %>)</h3>
+  <table width="100%" cellspacing="0">
+    <tr>
+      <th align="center">ID</th>
+      <th align="center">Batch</th>
+      <th align="center">Ver #</th>
+      <th align="center">Do Locally</th>
+      <th align="center">MTurk Hit Info</th>
+      <!--<th align="center">A/G</th>-->
+      <th align="center">Word / Snippet ID / Rem</th>
+      <th align="center">(* if done)</th>
+      <th align="center"># Window Switches</th>
+      <!--<th align="center">Feedback Word Count</th>-->
+      <!--<th align="center">Time Feedback</th>-->
+      <th align="center">Pay / Bonus / Reject</th>
+      <th align="center">Time Spent</th>
+      <th align="center">Email</th>
+      <th align="center">x</th>
+    </tr>
+    <% runs.reverse.each do |run| %>
+      <tr style="<% if run.has_duplicate_questions? %>background-color:rgb(255, 150, 150);<% end %><% if run.expired_and_unstarted? %>color:rgb(200,200,200);<% elsif run.expired_and_uncompleted? %>color:rgb(100,100,100);<% end %>">
+        <td align="center" valign="center"><%= link_to run.id, {:action => :investigate_run, :id => run.id}, {:target => '_blank'} %></td>
+        <td align="center" valign="center">
+          <div style="font-size:22px;"><%= run.batch %></div>
+          <span style="font-size:10px;"><%= run.created_at.strftime('%H:%M %b %d') %></span>
+        </td>
+        <td align="center" valign="center"><%= run.version %></td>
+        <td align="center" valign="center"><%= link_to 'do', {:controller => PersonalInformation::ExperimentalController, :id => run.id, :workerId => "test#{Time.now.to_i}", :assignmentId => "test#{Time.now.to_i}"}, {:target => '_blank'} %></td>
+        <td align="center" valign="center" style="font-size:6px;">
+          <%= link_to 'link', "https://#{RTurkWrapper::MTURK_DEV ? 'workersandbox' : 'www'}.mturk.com/mturk/preview?groupId=#{run.mturk_group_id}&hitId=#{run.mturk_hit_id}&externalHit=true&canAccept=true", :target => '_blank', :style => '' %>
+          <% if run.mturk_worker_id %><br /><%= run.mturk_worker_id %><% end %>
+          <% if run.mturk_assignment_id %><br /><%= run.mturk_assignment_id %><% end %>
+        </td>
+        <td align="center" valign="center" style="">
+          <%= run.snippet.word.entry %> /
+          <%= link_to run.snippet_id, {:controller => :snippets, :action => :how_workers_did_on_snippet, :id => run.snippet_id}, {:target => '_blank'} %> /
+          <%= run.snippet.num_disambiguations_left %>
+        </td>
+        <td align="center" valign="center">
+          <%= '*' if run.completed? %>
+        </td>
+        <td align="center" valign="center">
+          <%= run.browser_statuses.length / 2 unless run.browser_statuses.empty? %>
+        </td>
+        <%#= render :partial => 'num_words_feedback', :locals => {:s => s} %>
+        <td align="center" valign="center" style="font-size:8px;"><%= render :partial => 'pay_and_or_bonus_or_reject', :locals => {:run => run, :page => 'index'} if run.submitted? %></td>
+        <td align="center" valign="center"><%= convert_seconds_to_time(run.time_spent) if run.started? %></td>
+
+        <td align="center" valign="center">
+          <% if run.mturk_worker_id %>
+            <input type="checkbox" worker_id="<%= run.mturk_worker_id %>" class="worker_send_checkbox" />
+          <% else %>
+            <input type="checkbox" disabled="true" />
+          <% end %>
+        </td>
+        <td><%= link_to 'x', {:action => :delete_run, :id => run.id}, :confirm => "Are you sure you want to delete hit ##{run.id}?" %></td>
+      </tr>  
+    <% end %>    
+  </table>
+</div>

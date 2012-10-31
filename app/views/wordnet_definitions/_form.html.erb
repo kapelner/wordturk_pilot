@@ -1,0 +1,17 @@
+<%= form_for(@wordnet_definition) do |f| %>
+  <% if @wordnet_definition.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@wordnet_definition.errors.count, "error") %> prohibited this wordnet_definition from being saved:</h2>
+
+      <ul>
+      <% @wordnet_definition.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

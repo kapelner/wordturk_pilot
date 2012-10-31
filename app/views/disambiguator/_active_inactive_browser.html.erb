@@ -1,0 +1,40 @@
+<script type="text/javascript">
+  //assume browser is focused right now
+  var browser_focused = true;
+  
+  <% if PersonalInformation::ExperimentalModel::UseKapchaDiscourageNavigation %>
+    window.onload = function (){
+      document.onmousemove = function(){
+        kapcha.start_fading_in();
+      }
+    }
+  <% end %>
+
+  function onBlur() {
+    browser_focused = false;
+    RecordFocusOrUnfocus('blurred');
+    <% if PersonalInformation::ExperimentalModel::UseKapchaDiscourageNavigation %>
+      //disappear all text
+      kapcha.rewind();
+    <% end %>
+  };
+  function onFocus(){
+    browser_focused = true;
+    RecordFocusOrUnfocus('focused');
+    <% if PersonalInformation::ExperimentalModel::UseKapchaDiscourageNavigation %>
+      //start fading in all text
+      kapcha.start_fading_in();
+    <% end %>
+  };
+  if (/*@cc_on!@*/false) { // check for Internet Explorer
+    document.onfocusin = onFocus;
+    document.onfocusout = onBlur;
+  }
+  else {
+    window.onfocus = onFocus;
+    window.onblur = onBlur;
+  }
+
+  //do nothing here for now
+  function RecordFocusOrUnfocus(status){}
+</script>

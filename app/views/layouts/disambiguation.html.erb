@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "=//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <title>WordTurk Experiment</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <%= stylesheet_link_tag    "application" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tag %>
+  </head>
+  <body>
+    <center>
+      <div id="app">
+        <%= yield :layout %>
+      </div> 
+    </center>
+    <% if Rails.env.production? %>
+      <!-- Insert Google Analytics here -->
+    <% end %>
+  </body>
+</html>

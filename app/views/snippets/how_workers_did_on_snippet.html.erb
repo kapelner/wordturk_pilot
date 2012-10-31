@@ -1,0 +1,36 @@
+<br /><h2>How workers did on snippet #<%= @snippet.id %></h2>
+
+<div id="task_wrapper">
+
+  <div class="snippet_container">
+    <%= raw(Snippet.snippet_text_for_display(@snippet.context)) %>
+  </div>
+
+  <div class="instruction_text kapcha_control" style="display:none;">
+    Please pick the meaning of the word <span class="emboldened_word"><%= @word.entry %></span>
+    which <br />best fits the context of the paragraph above:
+  </div>
+
+  <table align="center">
+    <% @senses.each_with_index do |sense, i| %>
+      <% ds_by_sense = @disambiguations.select{|d| d.senseeval_inventory_id == sense.id} %>
+      <tr style="<% if @snippet.senseeval_inventory_id == sense.id %>background-color:yellow;<% end %>">
+        <td>
+          (<%= ds_by_sense.length %>)
+        </td>
+        <td align="left"><%= sense.basic_definition %></td>
+      </tr>
+      <% ds_by_sense.each do |d| %>
+        <tr>
+          <td></td>
+          <td>
+            <%= d.mturk_worker_id %> <%= d.age_and_gender_str %>&nbsp;&nbsp;
+            <%= '%.1f' % d.how_good_is_worker_as_pct %>% of <%= d.num_worker_disambiguations %>
+          </td>
+        </tr>
+      <% end %>
+    <% end %>
+  </table>
+  <br />
+  % correct: <%= @num_correct / @disambiguations.length.to_f * 100 %>%
+</div>

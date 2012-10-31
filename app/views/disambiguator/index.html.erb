@@ -1,0 +1,61 @@
+<h2>Word Meaning Task</h2>
+<%= render 'active_inactive_browser' %>
+
+<div id="task_wrapper">
+  <div class="instruction_text">
+    Read the following snippet which will fade in slowly: <%= "snippet id: #{@snippet.id}" if Rails.env.development? %>
+  </div>
+
+  <div class="snippet_container">    
+    <%= html_safe(Snippet.snippet_text_for_display(kapcha_tokenize(@snippet.context))) %>
+  </div>
+
+  <div class="instruction_text kapcha_control" style="display:none;">
+    Please pick the meaning of the word <span class="emboldened_word"><%= @word.entry %></span>
+    which <br />best fits the context of the paragraph above:
+  </div>
+
+  <br />
+  <form action="/<%= PersonalInformation::ExperimentalController %>/submit_sense_and_optional_feedback">
+    <input type="hidden" name="id" value="<%= @dr.id %>" />
+    <table align="center">
+      <% @senses.each_with_index do |sense, i| %>
+        <tr>
+          <td><input type="radio" name="choice" id="ch<%= i %>" value="<%= sense.id %>" class="kapcha_control" style="display:none;" /></td>
+          <td align="left">
+            <label for="ch<%= i %>" class="kapcha_control" style="display:none;">
+              <%= sense.basic_definition %>
+            </label>
+          </td>
+        </tr>
+      <% end %>
+    </table>
+
+    <br />
+    <input
+      type="submit"
+      value=' Submit my definition of "<%= @word.entry %>" (and whatever optional feedback I left below) '
+      class="kapcha_control"
+      style="display:none;"
+      id="kapcha_submit_button" />
+    <br />
+    <br />
+    <div style="font-size:12px; display:none;" class="kapcha_control">
+      My feedback:
+    </div>
+    <textarea name="comments" cols="50" rows="3" class="kapcha_control" style="display:none;"></textarea>
+    <div style="font-size:12px; display:none;" class="kapcha_control">
+      We also welcome and give bonuses to feedback, comments, and bug reports:
+    </div>
+
+    <script type="text/javascript">
+      var kapcha = new KapCha(<%= PersonalInformation::ExperimentalModel::KapChaWordsPerMinute %>, <%= PersonalInformation::ExperimentalModel::UseKapchaDiscourageNavigation %>);
+    </script>
+    
+    
+  </form>
+  
+</div>
+
+
+

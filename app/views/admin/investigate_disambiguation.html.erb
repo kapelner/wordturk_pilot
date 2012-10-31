@@ -1,0 +1,11 @@
+<h3>ID: <%= @br.id %> / <%= @br.mturk_worker_id || '(no worker ID)' %> / <%= @br.treatment_to_s %></h3>
+
+<%= render :partial => 'investigate_all_balls' %>
+<%= render :partial => 'run_notes' %>
+<input
+  type="checkbox"
+  checked="checked"
+  worker_id="<%= @br.mturk_worker_id %>"
+  class="worker_send_checkbox"
+  style="display:none;" />
+<%= render :partial => 'email_workers' %>
