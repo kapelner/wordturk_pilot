@@ -1,7 +1,7 @@
 WordTurk Duplication
 ==============
 
-This repository has the supplementary materials for the publication Kapelner, A., Kaliannan, K., Schwartz, A., Ungar, L., Foster, D., "New Insights from Coarse Word Sense Disambiguation in the Crowd"  COLING, 2012. It contains the (a) code to rerun the study and (b) duplicate the data analysis and figures in the publication.
+This repository has the supplementary materials for the publication Kapelner, A., Kaliannan, K., Schwartz, H. A., Ungar, L., Foster, D., "New Insights from Coarse Word Sense Disambiguation in the Crowd"  COLING, 2012. It contains the (a) code to rerun the study and (b) duplicate the data analysis and figures in the publication.
 
 Study Duplication
 -----------------
