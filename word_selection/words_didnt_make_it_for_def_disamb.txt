@@ -1,0 +1,687 @@
+
+Relate num entries in wordnet to morphological transparency
+
+
+abashed 2 v/adj
+abate 2 v/v
+aberration 3 n/n/n
+abeyance
+abhor
+abound 2 v/v
+abrogate 
+absolve 2 v/v
+abstemious 2 adj/adj
+abstract 9 n/n/v/v/v/v/adj/adj/adj
+abstruse
+acclaim 3 n/v/v
+accolade
+acquit 2 v/v
+acrid 2 adj/adj
+acuity 2 n/n
+acumen 2 n/n
+adage
+adamant 2 n/adj
+adept 2 n/adj
+adherent 2 n/adj
+adroit
+adulation
+advocate 4 n/n/v/v
+affable
+affinity 7n
+affluent 3 n/n/adj
+aggrandize
+aggregate 7 n/n/n/v/v/adj/adj
+agile 2 adj/adj
+allay 2 v/v
+alleviate 2 v/v
+aloof 2 adj/adv
+altruistic
+amass 2 v/v
+ambiguous 
+ameliorate 2 v/v
+amenable 4 adj/adj/adj/adj
+amiable 2 adj
+amicable
+amnesty 4 n/n/n/v
+amorphous
+anachronistic
+anarchy
+anguished 4 v/v/adj
+animate 7 v/v/v/v/adj/adj/adj
+animosity
+annihilate 
+annul 2 v/v
+anomalous
+antagonism 4 n
+antediluvian 4 n/n/adj/adj
+antipathy 2 n
+antiquated 2 v/v/adj
+apathy
+aphorism
+aplomb
+apocryphal 2 adj
+approbation 2 n
+arable
+arcane
+archaic 2 adj
+aromatic 2 adj
+artless 4 adj
+ascetic 3 n/adj/adj
+assiduous
+assuage 3 v
+astute
+atrophy 2 n/n/v
+audacious 3 adj
+augment 2 v
+augur 3 n/v/v
+auspicious
+austere 3 adj
+authentic 2 adj
+baffle 4 n/v/v/v
+baleful 2 adj
+balm 2 n
+banal
+baneful 2 adj
+banter 2 n/v
+barren 4 n/adj/adj/adj
+bawdy 2 n/adj
+becloud
+beleaguer 2 v
+belittle 3 v
+belligerent 2 n/adj/adj
+bemoan
+benefactor
+benevolent 4 adj
+benign 3 adj
+beset 3 v
+besiege 3 v
+bilk 4 v
+blandish
+blasphemy 2 n
+blithe 2 adj
+bombastic
+brazen 3 v/adj/adj
+brevity 2 n
+browbeat 2 v
+buoyancy 4 n
+burgeon
+cabal 3 n/n/v
+cacophony 2 n
+callous 3 v/adj/adj
+callow
+candid 3 adj
+capacious
+capricious 2 adj
+carouse 2 n/v
+castigate 2 v
+cavort
+censure 3 n/n/v
+chagrin 2 n/v
+charlatan
+chastise
+chicanery
+chide
+churlish 2 adj
+clamor 5 n/n/v/v/v
+clandestine
+clemency 2 n
+cliche
+coalesce 2 v
+cognizant 
+cohesion 3 n
+commend 5 v
+commensurate
+compatible 3 adj
+compel 2 v
+compliant
+conciliate 3 v
+concise
+condone
+confluence 3 n
+confound 2 v
+congeal
+congenial 2 adj
+contempt 4 n
+contentious 2 adj
+contrite
+conundrum
+convene 2 v
+conventional 7 adj
+converge 4 v
+copious 2 adj
+cordial 4 n/adj/adj/adj
+corpulence
+covert 4 n/n/adj/adj
+crass
+cryptic 3 adjm
+culpable
+cursory
+curtail 2 v
+daunt
+dawdle 3 v
+dearth 2 n
+debilitate
+deceit 3 n
+deface
+deference 3 n
+defiant
+deleterious
+demure
+deplete
+depravity 2 n
+deprecatory
+derision 2 n
+desecrate 2 v
+desolate 5 v/v/v/adj/adj
+despondent
+destitute 2 adj
+desultory
+deter 2 v
+detrimental
+diatribe
+dictum 2 n
+diffident 2 adj
+diffuse 6 v/v/v/adj/adj/adj
+digress 2 v
+diligent 2 adj/adj
+disarray 3 n/n/v
+disband 2 v
+discern
+discord 5 n/n/n/n/v
+discordant 2 adj
+discrepancy 2 n
+discriminate 4 v/v/v/adj
+discursive 2 adj
+disdain 4 n/n/v/v
+dishearten
+disparage
+disparate 2 adj
+dispassionate
+disperse 6 v
+disputatious
+disseminate
+dissent 6 n/n/n/v/v/v
+dissociate 3 v
+dissonance 3 n
+distraught
+dither 3 n/v/v
+doleful
+dolt
+dormant 4 adj
+dour 3 adj
+droll
+dubious 3 adj
+dulcet 2 adj
+duplicity 2 n
+eccentric 4 n/n/adj/adj
+eclectic 2 n/adj
+efface 3 v
+effervescent 3 adj
+effrontery
+elegiac 2 adj
+embroil
+empathy
+enervate 2 v 
+engender 2 v
+enhance 2 v
+enigmatic 2 adj
+enmesh
+enmity 2 n
+ephemeral 2 n/adj
+epicure
+equanimity
+equilibrium 4 n
+equivocate
+eradicate 2 v
+erratic 3 adj
+erudite
+esoteric
+espouse 3 v
+ethereal 4 adj
+eulogy 2 n
+euphony
+evanescent
+exacerbate 2 v
+exalt 4 v
+exculpate
+exhort 2 v
+exonerate
+exorbitant
+expedient 3 n/adj/adj
+expunge
+extol
+fabricate 2 v
+facetious
+fallacious 3 adj
+fallow 3 n/adj/adj
+fastidious 2 adj
+fathom 4 n/n/v/v
+fatuous
+fawning 5 v/v/v/adj/adj
+faze
+fecund 3 adj
+feign 2 v
+fervent 2 adj
+fetid
+fickle 2 adj
+finicky
+flamboyant 3 n/adj/adj
+flaunt 2 n/v
+fledgling 4 n/n/adj/adj
+fleeting 3 v/v/adj
+flippant
+florid 2 adj
+flourish 8 n/n/n/n/n/v/v/v
+flout 2 v
+fluctuate 3 v
+foment 2 v
+foolhardy
+fortuitous 2 adj
+frenetic
+frenzied 2 adj
+fret 16 4n 12v
+frivolous
+frugal
+fulsome
+furtive 2 adj
+gambol 2 n/v
+garble
+garish
+garner 4 n/v/v/v
+garrulous
+gaudy 3 n/adj/adj
+germinal 2 n/adj
+glut 3 n/v/v
+gouge 6 n/n/n/v/v/v
+grandiose 2 adj
+gregarious 3 adj
+grovel
+guile 3 n
+hackneyed
+halcyon 5 n/n/n/adj/adj
+hamper 4 n/n/v/v
+harass 2 v
+harbinger 2 n/v
+haughty
+havoc
+hearten
+hectic
+hedonistic
+heedless 2 adj
+hefty 3 adj
+heresy 2 n
+heterogeneous 2 adj
+hiatus 3 n
+hinder 4 v/v/v/adj
+hoard 3 n/v/v
+homogeneous
+humane 3 adj
+hypocrisy 2 n
+iconoclasm
+ignominy
+ignoramus
+illuminate 3 v
+imbue 3 v
+immutable
+impartial 2 adj
+impassive 2 adj
+impecunious
+impeded 3 v/v/adj
+impel 2 v
+impropriety 4 n
+improvident 2 adj
+impugn
+inane
+incense 4 n/n/v/v
+inchoate
+incipient
+incisive 2 adj
+inclined 9 6v 3adj
+incongruous
+incorporeal
+indecorous 2 adj
+indefatigable
+indigent
+indolent 2 adj
+indulgent 3 adj
+industrious 2 adj
+inept 3 adj
+inert 3 adj
+inexorable 2 adj
+infamous
+infinitesimal 2 n/adj
+ingenuous 2 adj
+inimical 
+insidious 3 adj
+insipid 2 adj
+insolvent 2 n/adj
+inspirit
+instigate 2 v
+insular 3 adj
+intractable
+intransigent
+intrepid
+inveigh 2 v
+inveigle
+iota 2 n
+irascible 2 adj
+irate 
+irreverent 3 adj
+irrevocable
+itinerant 2 n/adj
+jarring 6 5v/adj
+jeopardy
+jest 4 n/n/v/v
+jocular 2 adj/adv
+jollity
+jubilee
+judicious
+keen 7 n/v/5adj
+kindle 3 v
+knotty 4 adj
+labyrinth 2 n
+lackadaisical 2 adj
+laconic 
+lamentation 2 n
+languid
+largess 2 n
+lassitude 3 n
+latent 2 adj
+laudatory
+laxity 2 n
+lethargic
+levity 2 n
+listless 2 adj
+lithe
+loathe
+loquacious
+lucid 4 adj
+lugubrious
+lumbering 4 n/v/v/adj
+lurk 3 v
+magnanimous 2 adj
+maladroit 
+malevolent 2 adj
+malign 3 v/adj/adj
+malinger
+malleable 2 adj
+manifest 5 n/v/v/v/adj
+maudlin
+maverick 3 n/n/adj
+mawkish
+maxim 2 n
+meander 3 n/n/v
+mendicant 3 n/n/v
+mercurial 4 adj
+merge 3 v
+meticulous 2 adj
+mire 7 3n4v
+misanthrope
+misconstrue
+miserly
+mitigate 2 v
+mollify 3 v
+monotonous 2 adj
+morose
+morsel 2 n
+mortify 4 v
+motley 7 3n2v2adj
+multifarious
+mundane 3 adj
+munificent
+muse 3 2n/v
+nascent
+nebulous 3 adj
+nefarious
+negligent
+neophyte 3 n
+nettle 3 n/v/v
+neutral 8 n7adj
+nostalgia
+notorious
+novice 2 n
+noxious
+nullify 3 v
+obdurate 2 adj
+obfuscate
+obliterate 5 4 v / adj
+obscure 10 5v/5adj
+obsequious 2 adj
+obsolete
+obstinate 4v/3adj
+obstreperous 2 adj
+obtuse 4 adj
+odious
+opulent
+ornate
+ostentatious 2 adj
+ostracize 2 v
+palpable 2 adj
+paltry 2 adj
+panacea 2 n
+panegyric 2 n/adj
+paragon 2 n
+pariah
+parity 5 n
+parochial 2 adj
+parsimonious
+partisan 4 3n/adj
+pastiche 2 n
+patronizing 5 4v/adj
+paucity
+pauper
+pedestrian 2 n/adj
+peevish
+penchant
+penitent 2 n/adj
+pensive 2 adj
+penury
+perceptive 2 adj
+perfunctory 2 adj
+permeate 3 v
+pernicious 2 adj
+perplex 2 v
+perspicacious 2 adj
+pervade
+petulant
+philanthropy
+philistine 4 n/n/adj/adj
+pique 3 n/n/v
+pithy
+placate
+placid 2 adj
+plaintive
+platitude
+plaudit
+plethora
+polemical
+pompous 2 adj
+ponder
+ponderous 3 adj
+pragmatic 4 n/3adj
+precarious 3 adj
+precocious 2 adj
+presage 3n/n/v
+prescient
+pretentious 3 adj
+prevaricate
+proclivity
+prodigal 2n/adj
+prodigious 3 adj
+profane 6 v/v/4adj
+profligate 4n/n/adj/adj
+profound 6adj
+profusion
+proliferation 2 n
+prolific 2 adj
+propensity 3 n
+prophesy 2 v
+propitious
+proponent
+prosaic 3 adj
+prosperous 4 adj
+provincial 4n/n/adj/adj
+prudent
+pugnacity
+pulverize 3 v
+putrid 3 adj
+quagmire
+quell 2 v
+quench 6 v
+querulous
+quiescent 4 adj
+rabid
+ramble 3 n/v/v
+rancid 2 adj
+rancor
+raze
+rebuke 2 n/v
+recalcitrant 2 adj
+recondite
+redolent 3 adj
+redundant 2 adj
+refractory 4n/3adj
+refute 2 v
+relegate 4 v
+remedial 2 adj
+remiss
+replete 3 v/adj/adj
+repose 9 3n/6v
+reprehensible
+repress 4 v
+reprieve 6 4n/2v
+reprimand 3 n/v/v
+reprove
+rescind
+resolute 2 adj
+respite 6 5n/v
+restive 2 adj
+reticent 3 adj
+revere 4 2n/2v
+revile
+revoke 3 n/v/v
+rhapsodize 2 v
+ribald 2 n/adj
+rife 2 adj
+rigorous 2 adj
+ruminate 2 v
+saccharine
+sage 5 3n/2v
+sanguine 3n/adj/adj
+sated
+satiate 3 2v/adj
+saturate 2 v
+savant
+savory 7 4n/3adj
+scant 4 2v/adj
+scintilla 2 n
+scrupulous 2 adj
+scurrilous
+sectarian 3 n/adj/adj
+sedate 3 v/2adj
+sententious 2 adj
+serene 2 adj
+servile 2 adj
+shrewd 2 adj
+shun 2 v
+simpering
+skeptical 2 adj
+skittish
+slander 3 n/n/v
+slothful
+slovenly
+sluggard
+snare 7 5n/2v
+snippet
+solace 4 3n/v
+somber 2 adj
+spartan 5n/4adj
+spate 3n
+specious 2 adj
+spendthrift 2 n/adj
+spry 
+spurious 3 adj
+spurn
+squalor
+squander 2 v
+stagnant 2 adj
+steadfast 2 adj
+stealthy
+sterile 3 adj
+stinting 3 v/v/adj
+stoic 4 2n/2adj
+stolid
+stratagem 2 n
+strife 2 n
+stringent
+stultify 3 v
+stymie 3 n/n/v
+subvert 4 v
+sullen 2 adj
+supercilious 2 adj
+superficial 3 adj  
+supple 4 v/3adj
+surfeit 5 3n/2v
+surly
+surreptitious 2 adj
+sycophant
+taciturn
+tangible 4 adj
+taper 6 4n/2v
+tawdry 2 adj
+tedious 2 adj
+temerity
+tenacious 3 adj
+terse
+timorous
+tirade
+toady 2 n/v
+torpid 2 adj
+tractable 2 adj
+tranquil 2 adj
+transient 4 2n/2adj
+transitory
+trepidation
+trifling 5 n/v/v/v/adj
+trite
+truncate 4 v/v/v/adj
+tumultuous
+turmoil 3 n
+turpitude
+unctuous
+undermine 2 v
+unseemly
+unwieldy 3 adj
+upbraid
+utilitarian 3 n/adj/adj
+vacillate 2 v
+vacuous 4 adj
+vagrant 2 n/adj
+vapid 2 adj
+variegated 3 v/v/adj
+vehement 2 adj
+veiled 4 v/v/adj/adj
+venerate
+venturesome
+veracity
+verbose
+veto 4 n/n/v/v
+vex 5 v
+vicissitude 2 n
+vilify
+vindicate 3 v
+vindictive 2 adj
+virulent 3 adj
+vociferous
+volatile 5 n/4adj
+voluble
+voluminous 3 adj
+wane 4 n/3v
+waver 10 3n/7v
+wheedle
+whet 2 v
+whimsical
+wistful
+woe 2 n
+yielding 18 2n/3adj/13v
+zealous
